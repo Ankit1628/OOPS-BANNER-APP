@@ -1,8 +1,12 @@
 public class OOPSBannerApp {
 
     public static void main(String[] args) {
+        printBanner();
+    }
 
-        String banner = String.join("\n",
+    public static void printBanner() {
+
+        String[] banner = {
             "  ***      ***     *****     *****",
             " *   *    *   *    *    *   *",
             "*     *  *     *   *    *   *",
@@ -10,8 +14,10 @@ public class OOPSBannerApp {
             "*     *  *     *   *              *",
             " *   *    *   *    *              *",
             "  ***      ***     *         *****"
-        );
+        };
 
-        System.out.println(banner);
+        for(String line : banner) {
+            System.out.println(line);
+        }
     }
 }
